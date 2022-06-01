@@ -1,3 +1,4 @@
+import BigNumber from "bignumber.js";
 import express, { Router } from "express";
 import { IPriceBase } from "../lib/types";
 import { getPriceFeedName } from "../lib/utils";
@@ -96,8 +97,8 @@ function startApp(deploymentManager: ChainlinkDeploymentManager){
 
     try {
     const price = await deploymentManager.getLatestPrice(deployedFeeds[0].address);
-    const computed = price / Math.pow(10, deployedFeeds[0].decimals);
-    return res.status(200).send(computed.toString());
+    const computed = new BigNumber(price).dividedBy(new BigNumber(10).pow(8)).toString()
+    return res.status(200).send(computed);
     }
     catch(e: any){
       console.log(e)

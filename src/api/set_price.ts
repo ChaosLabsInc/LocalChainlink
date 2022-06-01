@@ -10,13 +10,13 @@ interface ConfigDetails {
     epoch: number
 };
 
-export async function setPrice(deploymentManager: IDeploymentManager, orc2Addr: string, price: number, round: number) {
+export async function setPrice(deploymentManager: IDeploymentManager, orc2Addr: string, price: bigint, round: number) {
     console.log("start transmit function")
     console.log("start get latest details")
     const configDetails = await getLatestConfigDetails(deploymentManager, orc2Addr)
     console.log("end get latest details")
 
-    const report = createReport(BigInt(price))
+    const report = createReport(price)
     const reportContext = createReportContext(configDetails.config_digest, round, configDetails.epoch)
 
     let hasher: Hash = createHash('blake2s')

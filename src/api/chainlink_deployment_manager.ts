@@ -1,4 +1,5 @@
 import { LCDClient, MnemonicKey, Msg, MsgInstantiateContract, MsgStoreCode, Wallet } from "@terra-money/terra.js";
+import BigNumber from "bignumber.js";
 import { readFile } from 'fs/promises';
 import { DEFAULT_SEED } from "./consts";
 import { deployPriceFeed } from "./create_feed";
@@ -178,6 +179,7 @@ export class ChainlinkDeploymentManager implements IDeploymentManager {
     }
 
     private calculatePriceToSet(price: number, decimals: number){
-        return price * Math.pow(10, decimals)
+        const calculated = new BigNumber(price).multipliedBy(new BigNumber(10).pow(decimals))
+        return BigInt(calculated.toString())
     }
 }

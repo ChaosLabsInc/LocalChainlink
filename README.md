@@ -77,7 +77,7 @@ This repo is meant to serve as an implementation spec for deploying price feeds 
     c. set feed decimals
     d. deploy
 
-## Start and reset LocalTerra
+## Start and reset LocalChainlink
 
 - Start LocalTerra:
 
