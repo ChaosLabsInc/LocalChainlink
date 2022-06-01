@@ -5,7 +5,7 @@
     "start": "node ./build/api/index.js",
     "cli": "node ./build/cli/index.js",
     "test": "jest --verbose",
-    "local-chainlink": "dotenv -- cross-var docker-compose -f %PATH_TO_LOCALTERRA% -f docker-compose.yml up",
+    "local-chainlink": "dotenv -- cross-var docker-compose -f %PATH_TO_LOCALTERRA% -f docker-compose.yml",
     "name": "dotenv cross-var echo Hello %PATH_TO_LOCALTERRA%"
   },
   "engines": {

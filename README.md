@@ -1,4 +1,4 @@
-🌠🌠 << CHAOS <3 Chainlink IMAGE >>> 🌠🌠
+![Chaos Labs - Chainlink Collaboration](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/ChaosChainlink.jpeg)
 
 This repository hosts a tool for deploying Chainlink price feeds into the LocalTerra ecosystem along with a CLI utility for mocking Chainlink Oracle prices Chainlink Data Feeds within LocalTerra.
 
@@ -51,7 +51,7 @@ PATH_TO_LOCALTERRA=$HOME/repos/repos/localterra/docker-compose.yml
 ```
 
 5. **In a separate terminal window (spwan a new window in iTerm with cdm+D)** run:
-`npm run local-chainlink`
+`npm run local-chainlink -- up`
 6. `npm run cli`
 
 After running the quickstart you should have the following: 2 terminals, 1 running docker-compose of localterra with chainlink depolyer, another running the cli-tool and it should look like this:
@@ -73,3 +73,17 @@ This repo is meant to serve as an implementation spec for deploying price feeds 
     b. set initial price for feed
     c. set feed decimals
     d. deploy
+
+## Start and reset LocalTerra
+
+- Start LocalTerra:
+
+```sh
+$ npm run local-chainlink -- up
+```
+
+Reset the world state:
+
+```sh
+$ npm run local-chainlink -- rm
+```

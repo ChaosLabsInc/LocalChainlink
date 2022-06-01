@@ -59,17 +59,18 @@ export class ChainlinkDeployerClient {
     private static async checkConnectivity(timeoutInMs: number = 3*60_000, backoffInMs: number = 1_000){
         let waitTime = 0;
         let spinner:Spinnies|undefined = undefined;
-
         while(waitTime <= timeoutInMs){
             const startTime = new Date().getTime();
             try {
                 await axios.get(ChainlinkDeployerClient.BASE_URL + "/health")
-                spinner?.succeed('spinner-1', { text: 'Success!' });
+                spinner?.remove('spinner-1');
                 return;
             }
             catch(e){
-                spinner = new Spinnies();
-                spinner.add('spinner-1', { text: 'Waiting for chainlink-deployer to start...' });
+                if (spinner === undefined){
+                    spinner = new Spinnies();
+                    spinner.add('spinner-1', { text: 'Waiting for chainlink-deployer to start...' });
+                }
                 await sleep(backoffInMs)                
                 waitTime += new Date().getTime() - startTime;
             }
