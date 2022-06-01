@@ -91,5 +91,6 @@ $ docker-compose up
 ## PR Requests
 Before submitting a PR please run the test suite with npm run test.
 
+![tests](https://github.com/ChaosLabsInc/LocalChainlink/blob/main/img/tests.png)
 
 CLI improvements. Have an idea to make this repo more user friendly? Let us know, or better yet, make a pull request :)
