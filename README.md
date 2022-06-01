@@ -45,13 +45,8 @@ With the ability to manipulate Chainlink Oracle return values, simulating such s
 1. 🛑 Git Clone command
 2. cd `🛑 directory name`
 3. `npm i` - Installing project libs
-4. update the path to local terra's `docker-compose.yml` in `.env` file
-```
-PATH_TO_LOCALTERRA=$HOME/repos/repos/localterra/docker-compose.yml
-```
-
 5. **In a separate terminal window (spwan a new window in iTerm with cdm+D)** run:
-`npm run local-chainlink -- up`
+`docker-compose up`
 6. `npm run cli`
 
 After running the quickstart you should have the following: 2 terminals, 1 running docker-compose of localterra with chainlink depolyer, another running the cli-tool and it should look like this:
@@ -84,11 +79,11 @@ This repo is meant to serve as an implementation spec for deploying price feeds 
 - Start LocalTerra:
 
 ```sh
-$ npm run local-chainlink -- up
+$ docker-compose up
 ```
 
 Reset the world state:
 
 ```sh
-$ npm run local-chainlink -- rm
+$ docker-compose up
 ```
