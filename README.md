@@ -19,7 +19,7 @@ Volatility is a DeFi constant and is something that all protocols and applicatio
 
 Imagine a lending protocol (Maker, AAVE, Benqi, Spectral.finance, etc..) that accepts Ethereum as collateral against stablecoin loans. What happens on a day like Black Thursday, when Ethereum prices cascade negatively to the tune of ~70% in a 48 hour time frame? Well, a lot of things happen 🤦.
 
-🌠🌠 << BLACK THURSDAY IMAGE>> 🌠🌠
+![Black Thursday Img](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/Cascading-ETH.png)
 
 One critical aspect of responding to market volatility is protocol keepers triggering liquidations and thus ensuring protocol solvency.
 
@@ -56,8 +56,11 @@ PATH_TO_LOCALTERRA=$HOME/repos/repos/localterra/docker-compose.yml
 
 After running the quickstart you should have the following: 2 terminals, 1 running docker-compose of localterra with chainlink depolyer, another running the cli-tool and it should look like this:
 
-🌠 << IMAGE OF CLI>>
+![Setup screenshot 1](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/TerminalSetup1.png)
 
+Once Chainlink LUNA\USD feed is deployed the terminal will look as follows:
+
+![Setup screenshot 2](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/TerminalSetup2.png)
 
 ## Recommended Usage
 This repo is meant to serve as an implementation spec for deploying price feeds and mocking oracle return values. This is a resource and reference for smart contract developers to implement such strategies and practices as part of their development lifecycle.
