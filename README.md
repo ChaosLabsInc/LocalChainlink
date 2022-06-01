@@ -42,8 +42,8 @@ With the ability to manipulate Chainlink Oracle return values, simulating such s
 
 ## Quickstart
 
-1. 🛑 Git Clone command
-2. cd `🛑 directory name`
+1. `git clone https://github.com/ChaosLabsInc/LocalChainlink.git`
+2. `cd LocalChainlink`
 3. `npm i` - Installing project libs
 5. **In a separate terminal window (spwan a new window in iTerm with cdm+D)** run:
 `docker-compose up`
@@ -87,3 +87,9 @@ Reset the world state:
 ```sh
 $ docker-compose up
 ```
+
+## PR Requests
+Before submitting a PR please run the test suite with npm run test.
+
+
+CLI improvements. Have an idea to make this repo more user friendly? Let us know, or better yet, make a pull request :)

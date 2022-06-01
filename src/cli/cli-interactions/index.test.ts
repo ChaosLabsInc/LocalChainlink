@@ -1,4 +1,4 @@
-import { Cli } from ".";
+import { Cli } from "./cli-interactions";
 
 const CLI_TEST_SUITE = "CLI_TEST_SUITE ";
 

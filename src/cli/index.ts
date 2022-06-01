@@ -1,5 +1,5 @@
 import { getPriceFeedName } from "../lib/utils";
-import { ChainlinkCliAction, Cli } from "./cli";
+import { ChainlinkCliAction, Cli } from "./cli-interactions/cli-interactions";
 import { ChainlinkDeployerClient } from "./client/chainlinkdeployerclient";
 import Utils from "./utils"
 
