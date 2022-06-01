@@ -77,6 +77,8 @@ This repo is meant to serve as an implementation spec for deploying price feeds 
     c. set feed decimals
     d. deploy
 
+![Example Flow](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/Chainlink-demo.gif)
+
 ## Start and reset LocalChainlink
 
 - Start LocalTerra:
