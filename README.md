@@ -72,7 +72,7 @@ This repo is meant to serve as an implementation spec for deploying price feeds 
     c. set feed decimals
     d. deploy
 
-[![asciicast](https://asciinema.org/a/8U5Xnpvw2oKKrqXXSuYLiI289.svg)](https://asciinema.org/a/8U5Xnpvw2oKKrqXXSuYLiI289)
+[![asciicast](https://github.com/ChaosLabsInc/chainlink-on-terra/blob/main/img/demo.svg)
 
 ## Start and reset LocalChainlink
 
