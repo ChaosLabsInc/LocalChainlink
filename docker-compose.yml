@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  chainlink-deployer:
+    image: chaoslabsxyz/terra-chainlink-deployer:latest
+    pull_policy: always
+    networks:
+      - terra
+    ports:
+      - "3010:3010"
