@@ -44,7 +44,6 @@ With the ability to manipulate Chainlink Oracle return values, simulating such s
 - `docker-compose`
 - `typescript` installed globally such that the tsc compiler is available
 - `ts-node`
-- [`localterra`](https://github.com/terra-money/LocalTerra)
 
 
 ## Quickstart
