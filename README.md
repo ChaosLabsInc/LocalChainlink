@@ -3,8 +3,8 @@
 This repository hosts a tool for deploying Chainlink price feeds into the LocalTerra ecosystem along with a CLI utility for mocking Chainlink Oracle prices Chainlink Data Feeds within LocalTerra.
 
 ### In this repository
-- Chainlink feeds deployer - Since today LocalTerra comes without any of the main-net/testnets history or data, meaning dApps using Chainlink have no way of testing their integration with Chainlink. Chainlink deployer answer that by deploying oracle price feeds to LocalTerra on its start.
-- CLI - a tool designed to give developers control of the Chainlink feeds within LocalTerra. This will enable truly integration and e2e testing for Chainlink dependent dApps.
+- **Chainlink feeds deployer** - Since today LocalTerra comes without any of the main-net/testnets history or data, meaning dApps using Chainlink have no way of testing their integration with Chainlink. Chainlink deployer answer that by deploying oracle price feeds to LocalTerra on its start.
+- **CLI** - a tool designed to give developers control of the Chainlink feeds within LocalTerra. This will enable truly integration and e2e testing for Chainlink dependent dApps.
 
 Navigate to our Quickstart section to get the repo up and running.
 
@@ -15,7 +15,9 @@ Oracle return values trigger internal state changes in web3 applications. When w
 
 
 ## Use Cases
-DeFi protocols and applications are at high risk due to volatile market conditions and a myriad of security vectors. Mocking Chainlink Oracle return values in a controlled, siloed testing environment allows us to address 2 common vectors.
+LocalChainlink is build for dApp developers to better test the application's integration flows with chainlink. By mocking the returned price developers can test their application's behavior in various market conditions both in development phase as well as part of their CI\CD pipelines.
+
+Moreover, DeFi protocols and applications are at high risk due to volatile market conditions and a myriad of security vectors. Mocking Chainlink Oracle return values in a controlled, siloed testing environment allows us to address 2 common vectors.
 
 ### Volatile Market Conditions
 
@@ -36,8 +38,7 @@ Oracle manipulation is an additional attack vector. With this method, malicious 
 With the ability to manipulate Chainlink Oracle return values, simulating such scenarios in your local development environment is possible.
 
 
-
-### Pre-requisites
+## Pre-requisites
 - `node` (version 16.14)
 - `docker`
 - `docker-compose`
@@ -45,8 +46,8 @@ With the ability to manipulate Chainlink Oracle return values, simulating such s
 - `ts-node`
 - [`localterra`](https://github.com/terra-money/LocalTerra)
 
-## Quickstart
 
+## Quickstart
 1. `git clone https://github.com/ChaosLabsInc/LocalChainlink.git`
 2. `cd LocalChainlink`
 3. `npm i` - Installing project libs
