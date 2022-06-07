@@ -2,6 +2,10 @@
 
 This repository hosts a tool for deploying Chainlink price feeds into the LocalTerra ecosystem along with a CLI utility for mocking Chainlink Oracle prices Chainlink Data Feeds within LocalTerra.
 
+### In this repository
+- Chainlink feeds deployer - Since today LocalTerra comes without any of the main-net/testnets history or data, meaning dApps using Chainlink have no way of testing their integration with Chainlink. Chainlink deployer answer that by deploying oracle price feeds to LocalTerra on its start.
+- CLI - a tool designed to give developers control of the Chainlink feeds within LocalTerra. This will enable truly integration and e2e testing for Chainlink dependent dApps.
+
 Navigate to our Quickstart section to get the repo up and running.
 
 For a full deep dive to the project architecture please visit the Chaos Labs blog.
@@ -30,6 +34,7 @@ With the ability to control Oracle return values, simulating such scenarios in y
 Oracle manipulation is an additional attack vector. With this method, malicious actors research data sources that various oracle consume as sources of truth. When actors possess the ability to manipulate the underlying data source they trigger downstream effects, manifesting in altered Oracle return values. As a result of manipulated data, actors and contracts can trigger various unwanted behaviors such as modified permissions, transaction execution, emergency pausing / shutdown and more.
 
 With the ability to manipulate Chainlink Oracle return values, simulating such scenarios in your local development environment is possible.
+
 
 
 ### Pre-requisites
